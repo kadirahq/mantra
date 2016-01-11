@@ -26,6 +26,6 @@ We've a demo app which implements most of the features of Mantra Specification. 
 
 ## Let's Build Mantra Together
 
-This is just the start, let's build Mantra together. Try building sample apps with Mantra. Experiments with it.
+This is just the start, let's build Mantra together. Try building sample apps with Mantra. Experiment with it.
 
 Then share your [experience](https://github.com/kadirahq/mantra/issues) and [discuss](https://github.com/kadirahq/mantra/issues) how we can improve Mantra.
