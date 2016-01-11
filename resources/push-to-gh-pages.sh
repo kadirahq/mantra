@@ -6,7 +6,7 @@ rm -rf out || exit 0;
 mkdir out;
 
 # run our compile script, discussed above
-./compile.sh
+npm run build
 
 # go to the out directory and create a *new* Git repo
 cd out
@@ -25,4 +25,4 @@ git commit -m "Deploy to GitHub Pages"
 # repo's gh-pages branch. (All previous history on the gh-pages branch
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-git push --force --quiet "https://${GH_TOKEN}@github.com/kadirahq/mantra" master:gh-pages > /dev/null 2>&1
+git push --force --quiet "git@github.com:kadirahq/mantra.git" master:gh-pages > /dev/null 2>&1
