@@ -1,0 +1,23 @@
+{
+  "name": "mantra-spec",
+  "private": true,
+  "contributors": [
+    "Arunoda Susiripala <arunoda@kadira.io> (https://twiiter.com/arunoda)"
+  ],
+  "license": "MIT",
+  "homepage": "https://kadirahq.github.io/mantra",
+  "bugs": {
+    "url": "https://github.com/kadirahq/mantra/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kadirahq/mantra.git"
+  },
+  "scripts": {
+    "build": "mkdir -p out; cp node_modules/spec-md/css/* out; spec-md spec/mantra.md > out/index.html",
+    "deploy": "sh ./resources/push-to-gh-pages.sh"
+  },
+  "devDependencies": {
+    "spec-md": "0.4.5"
+  }
+}
