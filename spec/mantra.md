@@ -5,7 +5,7 @@ Mantra
 
 **Introduction**
 
-This is a Draft Specification for Mantra, an application architecture for Meteor created by Kadira. It helps developers to build highly maintanable, future proof Meteor apps.
+This is a Draft Specification for Mantra, an application architecture for Meteor created by [Kadira](https://kadira.io/). It helps developers to build highly maintanable, future proof Meteor apps.
 
 **Copyright notice**
 

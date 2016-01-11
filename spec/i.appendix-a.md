@@ -27,7 +27,7 @@ Just forget about what you already know about HTML for a moment, learn React. Th
 
 Now, we rarely use states in a React components. Instead, we accept data via props. React's [stateless components](https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d) make it very easy.
 
-Then, we compose React containers to fetch data from different sources and load them into UI components. Projects like [react-komposer](https://github.com/kadirahq/react-komposer) make is simple. Checkout following article for more information:
+Then, we compose React containers to fetch data from different sources and load them into UI components. Projects like [react-komposer](https://github.com/kadirahq/react-komposer) make it simple. Checkout following article for more information:
 
 * [Let’s Compose Some React Containers](https://voice.kadira.io/let-s-compose-some-react-containers-3b91b6d9b7c8#.my9ynz9e2)
 
@@ -35,4 +35,4 @@ Then, we compose React containers to fetch data from different sources and load 
 
 You need to have better understanding of Meteor. For that follow Meteor's [official tutorial](https://www.meteor.com/tutorials/react/creating-an-app).
 
-Note: Mantra use some of the above technologies bit differently. For an example, Meteor's react tutorial suggest to use a mixin to access Meteor data. But Mantra uses a container, which is the modern way to use React.
+Note: Mantra use some of the above technologies bit differently. For an example, Meteor's react tutorial suggest to use a mixin to access Mongo collection data. But Mantra uses a container, which is the modern way to use React.
