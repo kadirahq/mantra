@@ -4,7 +4,7 @@ This section provides an overview of the core technologies and ideas behind Mete
 
 ## ES2015
 
-ES2015 (ES6) is the latest iteration of ECMAScript, the "standard" version of JavaScript. It's not yet fully implemented by all the browsers or server side environments. But, by using transpilers like [babel](https://babeljs.io/), we can use E2015 today.
+ES2015 (ES6) is the latest iteration of ECMAScript, the "standard" version of JavaScript. It's not yet fully implemented by all the browsers or server side environments. But, by using transpilers like [babel](https://babeljs.io/), we can use ES2015 today.
 
 Note: Meteor has built in support for ES2015
 
@@ -60,8 +60,9 @@ With the exception of code specifically targeted at the server or client Meteor 
 
 But, since the client and server contexts are not identical, you need to keep potential differences in mind. For example:
 
-*
-*
+* Code that needs to run in a browser context needs to run only on the client – it makes no sense to show an alert or go to a screen position on the server.
+* Code whose context depends on the current user also needs to run on the client – the server is responding to, potentially, tens or maybe even thousands of different users and the notion of the "current" user doesn't make sense there.
+* Secure code, on the other hand, must run on the server.
 
 #### Reactivity
 
@@ -75,6 +76,6 @@ Meteor uses **collections** to store persistent data. Nothing special needs to b
 
 * [Meteor for Front-End Engineers](https://davidwalsh.name/meteor-frontend-engineers)
 
-* [Learn Meteor Fundamentals and Best Practices]() - this article from, 2012, is dated. However it has a good explanation of the traditional Meteor directory structure. Mantra is opinionated about how to structure a Meteor app, it is worth understanding the differences here. Pay attention to the
+* [Learn Meteor Fundamentals and Best Practices](http://andrewscala.com/meteor/) - this article from, 2012, is dated. However it has a good explanation of the traditional Meteor directory structure. Mantra is opinionated about how to structure a Meteor app, it is worth understanding the differences here. Pay attention to the
 
-*
+* [What Goes Where: Making Sense of Meteor's Client/Server Split](https://www.discovermeteor.com/blog/what-goes-where/)
