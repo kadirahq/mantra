@@ -1,14 +1,14 @@
-# Appendix A: Prerequisite
+# Appendix A: Prerequisites
 
-These resources will help you understand Mantra very clearly.
+This section provides an overview of the core technologies and ideas behind Meteor and Mantra along with resources to help you get up to speed quickly.
 
 ## ES2015
 
-ES2015 is the standard version of JavaScript for 2015. It's not fully implemented by all the browers or server side enviroments. But, using transpilers like [babel](https://babeljs.io/), we could use E2015 today.
+ES2015 (ES6) is the latest iteration of ECMAScript, the "standard" version of JavaScript. It's not yet fully implemented by all the browsers or server side environments. But, by using transpilers like [babel](https://babeljs.io/), we can use E2015 today.
 
 Note: Meteor has built in support for ES2015
 
-ES2015 is the best thing happen to JavaScript. It introduce a lot of features and fixes a lot of common issues.
+ES2015 is the best thing happen to JavaScript. It introduces a lot of useful features and fixes a lot of common issues.
 
 * [Learn ES2015 Basics](https://babeljs.io/docs/learn-es2015/)
 * [Try ES2015 Syntax](https://babeljs.io/repl/)
@@ -33,6 +33,48 @@ Then, we compose React containers to fetch data from different sources and load 
 
 ## Meteor Basics
 
-You need to have better understanding of Meteor. For that follow Meteor's [official tutorial](https://www.meteor.com/tutorials/react/creating-an-app).
+To get started learning Meteor follow the [official tutorial](https://www.meteor.com/tutorials/react/creating-an-app).
 
-Note: Mantra use some of the above technologies bit differently. For an example, Meteor's react tutorial suggest to use a mixin to access Mongo collection data. But Mantra uses a container, which is the modern way to use React.
+### Meteor 1.3
+
+Meteor represents a new way of thinking about web application development – so there is a lot of learning going on as the community learns what works in practice and what doesn't. Meteor 1.3 is the latest version (it is currently (January of 2016) still in beta) and represents the latest iteration of thinking on a number of issues. Here is a list of the big changes in Meteor 1.3, keeping them in mind as you read will be helpful, as much of what you find on the web may refer to earlier versions of Meteor:
+
+* Full ES2015 (ES6) modules support. Ben Newman has written a good introduction to
+[Using JavaScript modules in Meteor](https://github.com/meteor/meteor/blob/release-1.3/packages/modules/README.md)
+* Better [npm](https://www.npmjs.com) (Node Package Manager) integration.
+* Improved control over file load order.
+
+### Mantra and Meteor
+
+Mantra uses some of the these technologies a bit differently. For an example, Meteor's React tutorial suggests using a mixin to access Mongo collection data. But Mantra uses a container, which is the modern way to use React.
+
+Keep this in mind as you read, and as you notice other examples help out with an issue or a pull request.
+
+### Key Meteor Concepts
+
+If you are new to Meteor, focus on understanding these key concepts which differentiate Meteor from some of the tools that you may be more familiar with.
+
+#### Shared client & server code
+
+With the exception of code specifically targeted at the server or client Meteor applications run the same code on the client and server sides of the app. This means that, in general, you write code once and don't need to worry about making the bridge between client and server – Meteor handles that for you.
+
+But, since the client and server contexts are not identical, you need to keep potential differences in mind. For example:
+
+*
+*
+
+#### Reactivity
+
+Meteor apps are **reactive** – changes to the state of the app are immediately visible to all users, there is no need to constantly refresh the page in your browser to see the current state.
+
+#### Collections
+
+Meteor uses **collections** to store persistent data. Nothing special needs to be done to keep the client and server view of the collection coherent – collections update automatically, so each client (and the server) always sees an up-to-date view of the data.
+
+#### Reading List
+
+* [Meteor for Front-End Engineers](https://davidwalsh.name/meteor-frontend-engineers)
+
+* [Learn Meteor Fundamentals and Best Practices]() - this article from, 2012, is dated. However it has a good explanation of the traditional Meteor directory structure. Mantra is opinionated about how to structure a Meteor app, it is worth understanding the differences here. Pay attention to the
+
+*
