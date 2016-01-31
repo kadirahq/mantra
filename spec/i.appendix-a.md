@@ -10,8 +10,7 @@ Note: Meteor has built in support for ES2015
 
 ES2015 is the best thing happen to JavaScript. It introduce a lot of features and fixes a lot of common issues.
 
-* [Learn ES2015 Basics](https://babeljs.io/docs/learn-es2015/)
-* [Try ES2015 Syntax](https://babeljs.io/repl/)
+* [Learn ES2015: Say Hello to ES2015](https://tutor.mantrajs.com/say-hello-to-ES2015/introduction)
 
 ## React
 
