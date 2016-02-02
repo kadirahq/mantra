@@ -16,7 +16,8 @@
   },
   "scripts": {
     "build": "mkdir -p out; cp node_modules/spec-md/css/* out; spec-md spec/mantra.md > out/index.html",
-    "serve": "onchange './spec/*.md' -- npm run build && cd out && python -m SimpleHTTPServer",
+    "build-watch": "onchange './spec/*.md' -- npm run build",
+    "serve": "cd out && python -m SimpleHTTPServer",
     "deploy": "sh ./resources/push-to-gh-pages.sh"
   },
   "devDependencies": {
