@@ -35,7 +35,7 @@ THE SOFTWARE.
 
 # [Core Components](2.core-components.md)
 
-# [Directory Layout & Naming Conventions](3.dir-layout.md)
+# [Directory Layout](3.dir-layout.md)
 
 # [Future Work](4.future-work.md)
 
@@ -46,3 +46,5 @@ THE SOFTWARE.
 # [Appendix B: Server Side Directory Layout](b.appendix.md)
 
 # [Appendix C: Organizing Modules](c.appendix.md)
+
+# [Appendix D: File Naming Conventions](d.appendix.md)
