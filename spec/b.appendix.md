@@ -16,7 +16,7 @@ Let's see what each of these directories and files does.
 
 ## methods
 
-This is the directory, you can put methods in your app. This is how the files in this directory looks like:
+This is the directory, we can put methods in your app. This is how the files in this directory looks like:
 
 ```
 * posts.js
@@ -29,7 +29,9 @@ Here we've a file called `posts.js` which has methods for the feature `posts` in
 
 Inside this JavaScript file, we've a default export which is a function. Meteor methods are defined inside that function.
 
-When naming methods inside the `posts.js`, always prefix the method name with "posts.". Then it's easy to refer them from the client.
+When naming methods inside the `posts.js`, always prefix the method name. That prefix is the name of the file with a dot(.).
+
+In our case, prefix is `posts.`
 
 For an example, here are some methods inside the `posts.js`:
 
@@ -53,7 +55,7 @@ export default function() {
 }
 ```
 
-Finally, there is a file called `index.js` which import all the other modules in this directory and working as a starting point. So, from the entrypoint we can do a single import rather importing all modules.
+Finally, there is a file called `index.js` which import all other modules in this directory and invoke them in a default export. So, when importing methods, we can do it with a single import.
 
 Here's a sample `index.js` file.
 
@@ -69,7 +71,7 @@ export default function () {
 
 ### Tests
 
-We can write tests for methods inside the tests directory. For method testing it's a better to do integration testing rather unit tests.
+We can write tests for methods inside the tests directory. For that it's a better to do integration testing rather doing unit tests.
 
 For that, you can use [Gagarin](https://github.com/anticoders/gagarin).
 

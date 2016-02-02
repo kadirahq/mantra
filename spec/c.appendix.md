@@ -10,14 +10,14 @@ However, now we are trying to suggest some potential patterns which can be used 
 
 ## Single Core Module
 
-For an simple app, we can put all the code inside a single module and name it as `core`. This would work for a simple app where there are a few client side code (or complexity).
+For an simple app, we can put all the code inside a single module and name it as `core`. This would work for a simple app where there is smaller client side codebase.
 
 ## Core Module & Multiple Feature Modules
 
 This is an extended version of the above "Single Module App" pattern. Here it is:
 
 * We've a core module containing all the core client side code including all the routes in the app.
-* Then we have separate modules for major features in our app. These modules do not contain routes.
+* Then we have different modules for major features in our app. These modules do not contain routes.
 
 ## Multi Modules
 

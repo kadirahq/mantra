@@ -36,7 +36,7 @@ posts-part1.js
 posts-part2.js
 ```
 
-This is the regular expression for the above rules:
+This is the regular expression for above rules:
 
 ```js
 /^([a-z]+[a-z0-9_]+)(\-[a-z]+[a-z0-9_]+)*$/
