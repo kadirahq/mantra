@@ -41,4 +41,6 @@ THE SOFTWARE.
 
 # [Contributing to the Mantra](5.contributing.md)
 
-# [Appendix A: Prerequisite](i.appendix-a.md)
+# [Appendix A: Prerequisite](a.appendix.md)
+
+# [Appendix B: Server Side Directory Layout](b.appendix.md)

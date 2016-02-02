@@ -1,4 +1,4 @@
-# Appendix A: Prerequisite
+# A. Appendix: Prerequisite
 
 These resources will help you understand Mantra very clearly.
 

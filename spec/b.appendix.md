@@ -1,0 +1,115 @@
+# B. Appendix: Server Side Directory Layout
+
+This is a directory layout for the server side part of your app. This is **not a** core part of Mantra, but it follows the directory layout we used for the client side of our app.
+
+On the server side we have four main directories and a JavaScript file called `main.js`.
+
+```
+* methods
+* publications
+* libs
+* configs
+* main.js
+```
+
+Let's see what each of these directories and files does.
+
+## methods
+
+This is the directory, you can put methods in your app. This is how the files in this directory looks like:
+
+```
+* posts.js
+* index.js
+* tests
+  - posts.js
+```
+
+Here we've a file called `posts.js` which has methods for the feature `posts` in our app. Depending your app, we can have different files.
+
+Inside this JavaScript file, we've a default export which is a function. Meteor methods are defined inside that function.
+
+When naming methods inside the `posts.js`, always prefix the method name with "posts.". Then it's easy to refer them from the client.
+
+For an example, here are some methods inside the `posts.js`:
+
+```js
+import {Posts, Comments} from '/lib/collections';
+import {Meteor} from 'meteor/meteor';
+import {check} from 'meteor/check';
+
+export default function() {
+  Meteor.methods({
+    'posts.create'(_id, title, content) {
+      //  method body
+    }
+  });
+
+  Meteor.methods({
+    'posts.createComment'(_id, postId, text) {
+      //  method body
+    }
+  });
+}
+```
+
+Finally, there is a file called `index.js` which import all the other modules in this directory and working as a starting point. So, from the entrypoint we can do a single import rather importing all modules.
+
+Here's a sample `index.js` file.
+
+```js
+import posts from './posts';
+import admin from './admin';
+
+export default function () {
+  posts();
+  admin();
+}
+```
+
+### Tests
+
+We can write tests for methods inside the tests directory. For method testing it's a better to do integration testing rather unit tests.
+
+For that, you can use [Gagarin](https://github.com/anticoders/gagarin).
+
+## publications
+
+This directory is identical to the `methods` directory, but we write publications instead of methods.
+
+## libs
+
+This directory contains utility functions which we can use inside the server.
+
+## configs
+
+This is the place we can write configurations in our app. These configuration files should have a default export function which can be imported and invoked. Configuration code should stay inside that function.
+
+Here's an example configuration:
+
+```js
+export default function() {
+  //  invoke the configuration here
+}
+```
+
+## main.js
+
+This is the place where we could start as the entry point for our app. We'll import methods, publications and configuration inside this file and invoke.
+
+Here's an example `main.js` file:
+
+```js
+import publications from './publications';
+import methods from './methods';
+import addInitialData from './configs/initial_adds.js';
+
+publications();
+methods();
+addInitialData();
+```
+
+TODO: Update links:
+
+
+NOTE: Have a look at this sample app to see how it has implemented these guidelines.
