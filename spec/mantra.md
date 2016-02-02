@@ -44,3 +44,5 @@ THE SOFTWARE.
 # [Appendix A: Prerequisite](a.appendix.md)
 
 # [Appendix B: Server Side Directory Layout](b.appendix.md)
+
+# [Appendix C: Organizing Modules](c.appendix.md)
