@@ -1,7 +1,7 @@
 Mantra
 -------
 
-*Working Draft - Version 0.2.0*
+*Working Draft - [Version 0.2.0](https://github.com/kadirahq/mantra/blob/master/CHANGELOG.md)*
 
 **Introduction**
 
