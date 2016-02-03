@@ -1,11 +1,11 @@
 Mantra
 -------
 
-*Working Draft - February 2016*
+*Working Draft - Version 0.2.0*
 
 **Introduction**
 
-This is a Draft Specification for Mantra, an application architecture for Meteor created by [Kadira](https://kadira.io/). It helps developers to build highly maintanable, future proof Meteor apps.
+This is a Draft Specification for Mantra, an application architecture for Meteor created by [Kadira](https://kadira.io/). It helps developers build maintainable, future-proof Meteor apps.
 
 **Copyright notice**
 

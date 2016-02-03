@@ -1,18 +1,18 @@
 # D. Appendix: File Naming Conventions
 
-In the [Directory Layout](#sec-Directory-Layout) we've discuss about ways  we can organize files for different components.
+In [Directory Layout](#sec-Directory-Layout), we discussed ways we can organize files for different components.
 
 Here we discuss ways to name files.
 
 ## Source File Names
 
-When we removed the extension from the filename it should satisfy following conditions:
+When we remove the extension from the filename it should satisfy following conditions:
 
 * All letters should be lower case.
-* Filename should be [alphanumeric](https://en.wikipedia.org/wiki/Alphanumeric) and can have `_` symbol.
-* Filename should start from a letter.
+* Filename should be [alphanumeric](https://en.wikipedia.org/wiki/Alphanumeric) and can have the `_` symbol.
+* Filename should start with a letter.
 
-Here's the regular expression for above rules:
+Here's the regular expression for the above rules:
 
 ```js
 /^[a-z]+[a-z0-9_]+$/
@@ -20,10 +20,10 @@ Here's the regular expression for above rules:
 
 ## Test File Names
 
-This is how we name files inside the `tests` directory. Here's the rules for them:
+This is how we name files inside the `tests` directory. Here are the rules:
 
 * There should be an identical filename in the source directory.
-* If not, when removed the postfix, there should be an identical filename in the source directory.
+* If not, when removing the postfix, there should be an identical filename in the source directory.
 
 ### Postfix
 
@@ -36,7 +36,7 @@ posts-part1.js
 posts-part2.js
 ```
 
-This is the regular expression for above rules:
+This is the regular expression for the above rules:
 
 ```js
 /^([a-z]+[a-z0-9_]+)(\-[a-z]+[a-z0-9_]+)*$/
