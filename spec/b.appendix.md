@@ -111,6 +111,4 @@ methods();
 addInitialData();
 ```
 
-TODO: Update links:
-
-NOTE: Have a look at this sample app to see how it has implemented these guidelines.
+NOTE: Have a look at this [sample app](https://github.com/mantrajs/mantra-sample-blog-app/tree/master/server) to see how it has implemented these guidelines.
