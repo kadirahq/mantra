@@ -1,11 +1,11 @@
 Mantra
 -------
 
-*Working Draft - January 2016*
+*Working Draft - Version 0.2.0*
 
 **Introduction**
 
-This is a Draft Specification for Mantra, an application architecture for Meteor created by [Kadira](https://kadira.io/). It helps developers to build highly maintanable, future proof Meteor apps.
+This is a Draft Specification for Mantra, an application architecture for Meteor created by [Kadira](https://kadira.io/). It helps developers build maintainable, future-proof Meteor apps.
 
 **Copyright notice**
 
@@ -35,10 +35,16 @@ THE SOFTWARE.
 
 # [Core Components](2.core-components.md)
 
-# [Directory Layout & Naming Conventions](3.dir-layout.md)
+# [Directory Layout](3.dir-layout.md)
 
 # [Future Work](4.future-work.md)
 
 # [Contributing to the Mantra](5.contributing.md)
 
-# [Appendix A: Prerequisite](i.appendix-a.md)
+# [Appendix A: Prerequisite](a.appendix.md)
+
+# [Appendix B: Server Side Directory Layout](b.appendix.md)
+
+# [Appendix C: Organizing Modules](c.appendix.md)
+
+# [Appendix D: File Naming Conventions](d.appendix.md)
