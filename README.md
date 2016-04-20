@@ -13,7 +13,7 @@ Maintainability is a key factor for success when working with a large team. We a
 
 JavaScript is a land of **choices**. We have more than one best thing for each problem. It can be hard to tell what’s the **best solution** now and what will change in the **future**.
 
-*Mantra relies on a set of core principles that will last for a long time. Then, we let others to change as needed.*
+*Mantra relies on a set of core principles that will last for a long time. Then, we let others change as needed.*
 
 [Read Mantra Specification to learn more about Mantra.](https://kadirahq.github.io/mantra/)
 
@@ -28,4 +28,4 @@ We've a demo app which implements most of the features of Mantra Specification. 
 
 This is just the start, let's build Mantra together. Try building sample apps with Mantra. Experiment with it.
 
-Then share your [experience](https://github.com/kadirahq/mantra/issues) and [discuss](https://github.com/kadirahq/mantra/issues) how we can improve Mantra.
+Then share your [experience](https://talk.mantrajs.com/) and [discuss](https://talk.mantrajs.com/) how we can improve Mantra.
