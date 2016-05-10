@@ -21,7 +21,7 @@ JavaScript is a land of **choices**. We have more than one best thing for each p
 
 We've a demo app which implements most of the features of Mantra Specification. Here it is:
 
-* [Live Version](http://mantra-sample-blog.meteor.com/)
+* [Live Version](http://mantra-sample-blog-app.herokuapp.com/)
 * [Repo](https://github.com/mantrajs/mantra-sample-blog-app)
 
 ## Let's Build Mantra Together
